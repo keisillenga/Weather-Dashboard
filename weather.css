@@ -1,0 +1,189 @@
+*{
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+
+    margin:0;
+    min-height:100vh;
+    background:
+    linear-gradient(
+    135deg,
+    #74ebd5,
+    #9face6
+    );
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+.container{
+
+    width:90%;
+    max-width:900px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.2);
+
+}
+
+
+
+.top{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+
+
+button{
+
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    background:#4a6cf7;
+    color:white;
+
+}
+
+
+
+#mode{
+
+    font-size:20px;
+
+}
+
+
+
+.search{
+
+    margin:30px 0;
+    display:flex;
+    gap:10px;
+
+}
+
+
+
+input{
+
+    flex:1;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:16px;
+
+}
+
+
+
+.weather-box{
+
+    text-align:center;
+
+}
+
+
+
+#icon{
+
+    width:100px;
+
+}
+
+
+
+#temperature{
+
+    font-size:50px;
+
+}
+
+
+
+.details{
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:20px;
+
+}
+
+
+
+.details div{
+
+    background:#f2f2f2;
+    padding:20px;
+    border-radius:15px;
+
+}
+
+
+
+.forecast{
+
+    display:flex;
+    gap:15px;
+    overflow:auto;
+
+}
+
+
+
+.card{
+
+    min-width:140px;
+    background:#eee;
+    padding:15px;
+    border-radius:15px;
+    text-align:center;
+
+}
+
+
+
+.card img{
+
+    width:60px;
+
+}
+
+
+
+/* DARK MODE */
+
+
+.dark{
+
+    background:#111;
+    color:white;
+
+}
+
+
+.dark .container{
+
+    background:#222;
+
+}
+
+
+.dark .details div,
+.dark .card{
+
+    background:#333;
+
+}
