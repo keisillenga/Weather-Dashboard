@@ -1,138 +1,183 @@
-*{
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-body{
 
-    margin:0;
-    min-height:100vh;
-    background:
-    linear-gradient(
-    135deg,
-    #74ebd5,
-    #9face6
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #0033cc,   /* Deep Blue */
+        #0066ff    /* Bright Blue */
     );
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.container{
 
-    width:90%;
-    max-width:900px;
-    background:white;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:
-    0 10px 30px rgba(0,0,0,0.2);
-
+.container {
+    width: 90%;
+    max-width: 900px;
+    background: #ffffff;  /* White (neutral base, or use #e6f0ff for light blue) */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 51, 204, 0.3);
 }
-.top{
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-button{
 
-    border:none;
-    padding:12px 20px;
-    border-radius:10px;
-    cursor:pointer;
-    background:#4a6cf7;
-    color:white;
-
+button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #0033cc;   /* Deep Blue */
+    color: #ffcc00;        /* Yellow text */
+    font-weight: bold;
 }
-#mode{
 
-    font-size:20px;
-
+#mode {
+    font-size: 20px;
+    background: #ffcc00;   /* Yellow */
+    color: #0033cc;        /* Blue text */
 }
-.search{
 
-    margin:30px 0;
-    display:flex;
-    gap:10px;
-
+.search {
+    margin: 30px 0;
+    display: flex;
+    gap: 10px;
 }
-input{
 
-    flex:1;
-    padding:15px;
-    border-radius:10px;
-    border:1px solid #ccc;
-    font-size:16px;
-
+input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #0033cc;
+    font-size: 16px;
+    background: #e6f0ff;   /* Light Blue */
+    color: #0033cc;
 }
-.weather-box{
 
-    text-align:center;
-
+input::placeholder {
+    color: #6699ff;
 }
-#icon{
 
-    width:100px;
-
+.weather-box {
+    text-align: center;
 }
-#temperature{
 
-    font-size:50px;
-
+#icon {
+    width: 100px;
 }
-.details{
 
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    margin-top:20px;
-
+#temperature {
+    font-size: 50px;
+    color: #0033cc;
 }
-.details div{
 
-    background:#f2f2f2;
-    padding:20px;
-    border-radius:15px;
-
+#description {
+    color: #0066ff;
+    font-weight: bold;
 }
-.forecast{
 
-    display:flex;
-    gap:15px;
-    overflow:auto;
-
+.details {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
 }
-.card{
 
-    min-width:140px;
-    background:#eee;
-    padding:15px;
-    border-radius:15px;
-    text-align:center;
-
+.details div {
+    background: #ffcc00;   /* Yellow */
+    padding: 20px;
+    border-radius: 15px;
+    color: #0033cc;
+    font-weight: bold;
 }
-.card img{
 
-    width:60px;
-
+.forecast {
+    display: flex;
+    gap: 15px;
+    overflow: auto;
 }
+
+.card {
+    min-width: 140px;
+    background: #e6f0ff;   /* Light Blue */
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid #0033cc;
+}
+
+.card img {
+    width: 60px;
+}
+
+.card h3 {
+    color: #0033cc;
+}
+
+.card p {
+    color: #0066ff;
+}
+
+h2 {
+    color: #0033cc;
+}
+
 /* DARK MODE */
-.dark{
-
-    background:#111;
-    color:white;
-
+.dark {
+    background: linear-gradient(
+        135deg,
+        #001a66,   /* Darker Blue */
+        #0033cc    /* Deep Blue */
+    );
+    color: #ffcc00;
 }
 
-.dark .container{
-
-    background:#222;
-
+.dark .container {
+    background: #002266;
+    box-shadow: 0 10px 30px rgba(255, 204, 0, 0.2);
 }
+
 .dark .details div,
-.dark .card{
+.dark .card {
+    background: #ffcc00;
+    color: #0033cc;
+}
 
-    background:#333;
+.dark input {
+    background: #001a66;
+    color: #ffcc00;
+    border-color: #ffcc00;
+}
 
+.dark input::placeholder {
+    color: #ffcc00;
+    opacity: 0.7;
+}
+
+.dark h2,
+.dark #temperature {
+    color: #ffcc00;
+}
+
+.dark #description,
+.dark .card p {
+    color: #ffcc00;
+}
+
+.dark .card {
+    border-color: #ffcc00;
+    background: #0033cc;
+}
+
+.dark .card h3 {
+    color: #ffcc00;
 }
